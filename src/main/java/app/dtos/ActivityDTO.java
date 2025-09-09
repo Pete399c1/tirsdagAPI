@@ -1,5 +1,6 @@
 package app.dtos;
 
+import app.enums.ActivityType;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -9,10 +10,11 @@ import java.time.LocalTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Builder
 public class ActivityDTO {
     private LocalDate exerciseDate;
-    private ActivityDTO exerciseType;
+    private ActivityType exerciseType;
     private LocalTime timeOfDay;
     private double duration;
     private double distance;
