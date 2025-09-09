@@ -5,13 +5,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonSetter;
+import lombok.*;
+
+@Data
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 public class WeatherInfoDTO {
-    private double temperature;
-    private String skyText;
-    private double humidity;
-    private String windText;
+    @JsonProperty("LocationName")
+    private String locationName;
+    @JsonProperty("CurrentData")
+    private CurrentDataDTO currentData;
 }
+

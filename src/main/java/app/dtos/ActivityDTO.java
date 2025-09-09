@@ -1,19 +1,20 @@
 package app.dtos;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class ActivityDTO {
-    private String exerciseDate;
-    private String exerciseType;
-    private String timeOfDay;
-    private int duration;
+    private LocalDate exerciseDate;
+    private ActivityDTO exerciseType;
+    private LocalTime timeOfDay;
+    private double duration;
     private double distance;
     private String comment;
 
