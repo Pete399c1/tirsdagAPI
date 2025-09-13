@@ -9,5 +9,9 @@ Create a WeatherService and a CityService that can fetch data from the external 
 
 Create a ActivityService that can create an ActivityDTO and enrich it with data from the WeatherService and the CityService.
 
-Create a integration test that can test the ActivityService and the WeatherService and the CityService.
+//Create a integration test that can test the ActivityService and the WeatherService and the CityService.
+```
+
+```
+Change your code to use threads and executor service to get the city and weather data into your DTOs
 ```
