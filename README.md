@@ -14,4 +14,10 @@ Create a ActivityService that can create an ActivityDTO and enrich it with data 
 
 ```
 Change your code to use threads and executor service to get the city and weather data into your DTOs
+
+Create a database with JPA and persist the data from the external APIs in the database. 
+You should probably create the entities for Activity, CityInfo and WeatherInfo. 
+Remember to add the Entities to the HibernateConfig file. 
+Think about the relationships between Activity, CityInfo, and WeatherInfo when designing your entities. 
+Consider using one-to-many or one-to-one relationships as needed, and ensure you annotate them properly with JPA annotations like @OneToMany, @ManyToOne, etc.
 ```
